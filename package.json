@@ -1,0 +1,49 @@
+{
+  "name": "monorepo-js-starter",
+  "version": "0.0.0",
+  "description": "A simple template for monorepo projects",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "monorepo",
+    "template"
+  ],
+  "author": {
+    "name": "Marcelo H M Dias",
+    "url": "https://github.com/marcelohmdias",
+    "email": "marcelohmdias@gmail.com"
+  },
+  "homepage": "https://github.com/marcelohmdias/monorepo-js-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelohmdias/monorepo-js-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcelohmdias/monorepo-js-starter/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.2.6"
+  },
+  "engines": {
+    "node": ">=12.22.7",
+    "pnpm": ">=6"
+  },
+  "packageManager": "pnpm",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
